@@ -6,8 +6,8 @@ import dev.langchain4j.model.output.structured.Description;
 public class ReleaseNotes
 {
 	@Description("A ca. two paragraph text about the release, as it would be used in e.g. iOS Store or Playstore")
-	String prosaicText;
+	public String prosaicText;
 
 	@Description("A MD text with itemized changes inteded for the user of the software")
-	String mdText;
+	public String mdText;
 }
