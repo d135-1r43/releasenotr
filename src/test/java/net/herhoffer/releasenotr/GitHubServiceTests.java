@@ -4,6 +4,7 @@ import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.hamcrest.Matchers;
 import org.hamcrest.collection.IsCollectionWithSize;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.kohsuke.github.GHCommit;
 
@@ -16,6 +17,7 @@ import static org.hamcrest.Matchers.greaterThanOrEqualTo;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 
 @QuarkusTest
+@Tag("integration")
 class GitHubServiceTests
 {
 	@Inject
