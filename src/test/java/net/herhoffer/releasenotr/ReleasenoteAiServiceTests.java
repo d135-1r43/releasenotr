@@ -2,6 +2,7 @@ package net.herhoffer.releasenotr;
 
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.kohsuke.github.GHCommit;
 
@@ -11,6 +12,7 @@ import java.util.List;
 import static org.wildfly.common.Assert.assertNotNull;
 
 @QuarkusTest
+@Tag("integration")
 class ReleasenoteAiServiceTests
 {
 	@Inject
