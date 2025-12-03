@@ -46,6 +46,6 @@ class GitHubServiceTests
 		String readme = gitHubService.getReadme(repo);
 
 		// then
-		assertThat(readme, containsString("This process provides a GraphQL API for Reimann's weekly menu"));
+		assertThat(readme, containsString("reimanns-scraper"));
 	}
 }
