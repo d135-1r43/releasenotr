@@ -89,7 +89,11 @@ public class ReleaseNotesResource
 		return commit.getSHA1();
 	}
 
-	public record CommitInfo(String sha, String message, long date) {}
+	public record CommitInfo(String sha, String message, long date)
+	{
+	}
 
-	public record GenerateRequest(String repo, List<String> commitShas) {}
+	public record GenerateRequest(String repo, List<String> commitShas)
+	{
+	}
 }

@@ -38,7 +38,7 @@ public class GitHubService
 
 		GHRepository repository = gitHub.getRepository(repo);
 		GHContent readme = repository.getReadme();
-		try(InputStream stream = readme.read())
+		try (InputStream stream = readme.read())
 		{
 			return new String(stream.readAllBytes(), StandardCharsets.UTF_8);
 		}
